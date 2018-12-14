@@ -9,6 +9,6 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "trip", path = "trip")
 public interface TripRepository extends PagingAndSortingRepository<Trip, Long> {
 
-    List<Customer> findByName(@Param("name") String name);
+    List<Trip> findByName(@Param("name") String name);
 }
 
